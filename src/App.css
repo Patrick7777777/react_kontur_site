@@ -3,6 +3,11 @@
   outline-offset: 0;
 }
 
+.QQQ {
+  display: none;
+}
+
+
 .KontWrapper {
   display: grid;
   grid-template-rows: 14% 45px 1fr 80px;

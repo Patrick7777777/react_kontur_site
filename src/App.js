@@ -28,23 +28,41 @@ class App extends React.Component {
             height: window.innerHeight,
             width: window.innerWidth
         });
-        console.log(this.state.height);
-        console.log(this.state.width)
+        //console.log(this.state.height);
+        //console.log(this.state.width)
     }
 
 
 
     render() {
+
+            let ttt = 0;
+        if (this.state.width < 700) {
+            ttt = "QQQ"
+        } else {
+            ttt = "ZZZ"
+        }
+
         return (
             <BrowserRouter>
                 <div className='KontWrapper'>
+
                     <KontHeader/>
                     <KontLogo/>
                     <KontMenu xxx = {this.state.width}/>
+
+
+
+
+
+
                     <KontPicture/>
                     <KontArticle/>
                     <KontFooter/>
                     <KontInfo/>
+                    <div className={ttt}>
+                        qsldkvjqlskdjcqlkedjlvqkejclkqej
+                    </div>
                 </div>
             </BrowserRouter>
         );
