@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import KontHeader from './components/KontHeader';
-import KontPicture from './components/KontPicture';
-import KontLogo from './components/KontLogo';
-import KontFooter from './components/KontFooter';
-import KontInfo from './components/KontInfo';
-import KontArticle from './components/KontArticle';
-import KontMenu from './components/KontMenu';
+import KontHeader from './components/KonHeader/KontHeader';
+import KontPicture from './components/KontPicture/KontPicture';
+import KontLogo from './components/Logo/KontLogo';
+import KontFooter from './components/KontFooter/KontFooter';
+import KontInfo from './components/KontInfo/KontInfo';
+import KontArticle from './components/KontArticle/KontArticle';
+import KontMenu from './components/KontMenu/KontMenu';
 import {BrowserRouter} from "react-router-dom";
 
 class App extends React.Component {
@@ -28,41 +28,38 @@ class App extends React.Component {
             height: window.innerHeight,
             width: window.innerWidth
         });
-        //console.log(this.state.height);
-        //console.log(this.state.width)
     }
-
-
 
     render() {
 
-            let ttt = 0;
-        if (this.state.width < 700) {
-            ttt = "QQQ"
-        } else {
-            ttt = "ZZZ"
-        }
+        console.log(this.state.width)
+        let adaptiveWidth = '';
+
+        if (this.state.width>=1300) {
+            adaptiveWidth = 'big'}
+        else if ((this.state.width<1300) && (this.state.width>=1100)) {
+            adaptiveWidth = 'medium_1'}
+        else if ((this.state.width<1100) && (this.state.width>=900)) {
+            adaptiveWidth = 'medium_2'}
+        else if ((this.state.width<900) && (this.state.width>=777)) {
+            adaptiveWidth = 'medium_3'}
+        else if ((this.state.width<777) && (this.state.width>=500)) {
+            adaptiveWidth = 'medium_4'}
+        else if (this.state.width<500) {
+            adaptiveWidth = 'small'}
+
+        console.log(adaptiveWidth);
 
         return (
             <BrowserRouter>
-                <div className='KontWrapper'>
-
-                    <KontHeader/>
-                    <KontLogo/>
-                    <KontMenu xxx = {this.state.width}/>
-
-
-
-
-
-
-                    <KontPicture/>
-                    <KontArticle/>
-                    <KontFooter/>
-                    <KontInfo/>
-                    <div className={ttt}>
-                        qsldkvjqlskdjcqlkedjlvqkejclkqej
-                    </div>
+                <div className={adaptiveWidth}>
+                    <KontHeader adaptiveWidth={adaptiveWidth}/>
+                    <KontLogo adaptiveWidth={adaptiveWidth}/>
+                    <KontMenu adaptiveWidth={adaptiveWidth} windWidth = {this.state.width}/>
+                    <KontPicture adaptiveWidth={adaptiveWidth} windWidth = {this.state.width}/>
+                    <KontArticle adaptiveWidth={adaptiveWidth}/>
+                    <KontFooter adaptiveWidth={adaptiveWidth}/>
+                    <KontInfo adaptiveWidth={adaptiveWidth}/>
                 </div>
             </BrowserRouter>
         );

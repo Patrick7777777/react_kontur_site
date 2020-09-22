@@ -1,0 +1,40 @@
+.big_picture{
+     grid-area: 1/1/1/3;
+     width: 820px;
+     height: 790px;
+ }
+
+.medium_1_picture{
+    grid-area: 1/1/1/3;
+    width: 670px;
+    height: 670px;
+}
+
+.medium_2_picture{
+    grid-area: 1/1/1/3;
+    width: 520px;
+    height: 550px;
+}
+
+.medium_3_picture{
+    grid-area: 2/1/3/3;
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+}
+
+.medium_4_picture{
+    grid-area: 2/1/3/3;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+}
+.small_picture{
+    grid-area: 2/1/3/3;
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+    z-index: -1;
+}

@@ -1,0 +1,17 @@
+.KontNavbar {
+        display: grid;
+        grid-template-columns: 143px 143px 143px 143px 143px 143px;
+        top: 9px;
+        left: 30px;
+}
+
+.KontReference a {
+    color: black;
+    text-decoration: none;
+}
+
+.KontReference a.active {
+    color: red;
+}
+
+

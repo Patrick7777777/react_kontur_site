@@ -1,0 +1,39 @@
+.big_header{
+    grid-area: 1/3/3/4;
+    width: 100%;
+    height: 167px;
+}
+
+.medium_1_header{
+    grid-area: 1/3/3/4;
+    width: 100%;
+    height: 167px;
+}
+
+.medium_2_header{
+    grid-area: 1/3/3/4;
+    width: 100%;
+    height: 167px;
+}
+
+.medium_3_header{
+    grid-area: 1/1/2/3;
+    width: 100%;
+    height: 147px;
+}
+
+.medium_4_header{
+    grid-area: 1/1/2/3;
+    width: 100%;
+    height: 147px;
+}
+
+.small_header{
+    grid-area: 1/1/2/3;
+    width: 100%;
+    height: 147px;
+}
+
+
+
+

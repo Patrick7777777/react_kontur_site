@@ -3,16 +3,50 @@
   outline-offset: 0;
 }
 
-.QQQ {
-  display: none;
+.big {
+      display: grid;
+      grid-template-rows: 14% 45px 1fr 80px;
+      grid-template-columns: 70px 750px 1fr;
+      height: 100vh;
+      margin: 0;
+  }
+
+.medium_1 {
+    display: grid;
+    grid-template-rows: 14% 45px 1fr 80px;
+    grid-template-columns: 70px 600px 1fr;
+    height: 100vh;
+    margin: 0;
 }
 
-
-.KontWrapper {
+.medium_2 {
   display: grid;
   grid-template-rows: 14% 45px 1fr 80px;
-  grid-template-columns: 70px 47% 1fr;
+  grid-template-columns: 70px 450px 1fr;
   height: 100vh;
   margin: 0;
 }
 
+.medium_3 {
+    display: grid;
+    grid-template-rows: 109px 45px 61vh 0.1fr 80px;
+    grid-template-columns: 0.03fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.medium_4 {
+    display: grid;
+    grid-template-rows: 109px 45px 44vh 0.1fr 80px;
+    grid-template-columns: 0.03fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.small {
+  display: grid;
+  grid-template-rows: 109px 45px 34vh 0.1fr 80px;
+  grid-template-columns: 0.03fr 1fr;
+  height: 100vh;
+  margin: 0;
+}

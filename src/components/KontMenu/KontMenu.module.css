@@ -1,0 +1,41 @@
+.button {
+    height: 30px;
+    position: relative;
+    left: 10px;
+    top: 3px;
+
+
+    background-color: white;
+    border-color: white;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+
+.KontMenu {
+    grid-area: 2 / 2 / 3 / 4;
+    z-index: 1;
+    background: white;
+    position: relative;
+    top: -17%;
+    opacity: 0.92;
+}
+
+.KontNavbar {
+    display: grid;
+    grid-template-columns: 50px 143px;
+    top: 9px;
+    left: 30px;
+}
+
+.KontMenu.line_menu {
+    background: rgb(61, 38, 38);
+    height: 2.7px;
+    position: relative;
+    top: 50px;
+    opacity: 0.5;
+}

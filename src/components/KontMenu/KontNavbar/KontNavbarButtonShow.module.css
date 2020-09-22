@@ -1,0 +1,20 @@
+.KontNavbar {
+    padding-top: 25px;
+}
+
+.KontReference {
+    padding: 7px;
+    background-color: white;
+    width: 121px;
+}
+
+.KontReference a {
+    color: black;
+    text-decoration: none;
+}
+
+.KontReference a.active {
+    color: red;
+}
+
+
