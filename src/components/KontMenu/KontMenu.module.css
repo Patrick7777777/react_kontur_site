@@ -1,24 +1,25 @@
-.button {
-    height: 30px;
+button {
     position: relative;
     left: 10px;
+    border: none;
     top: 3px;
-
-
     background-color: white;
-    border-color: white;
-    color: black;
-    padding: 15px 20px;
-    text-align: center;
     text-decoration: none;
     cursor: pointer;
+}
 
-
+button div{
+    width: 33px;
+    height: 4px;
+    background-color: #686868;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 3px;
 }
 
 .KontMenu {
     grid-area: 2 / 2 / 3 / 4;
-    z-index: 1;
+
     background: white;
     position: relative;
     top: -17%;

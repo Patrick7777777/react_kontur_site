@@ -1,3 +1,7 @@
 .PageToPartners {
-    color:orangered;
+    height: 670px;
+    color: black;
+    overflow-y: scroll;
 }
+
+.PageToPartners::-webkit-scrollbar {width:0;}

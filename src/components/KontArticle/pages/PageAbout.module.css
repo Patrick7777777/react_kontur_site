@@ -1,3 +1,7 @@
 .PageAbout {
+    height: 670px;
     color: black;
+    overflow-y: scroll;
 }
+
+.PageAbout::-webkit-scrollbar {width:0;}

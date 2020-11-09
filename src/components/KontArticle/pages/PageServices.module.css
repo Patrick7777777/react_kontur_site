@@ -1,3 +1,7 @@
 .PageServices {
-    color: green;
+    height: 670px;
+    color: black;
+    overflow-y: scroll;
 }
+
+.PageServices::-webkit-scrollbar {width:0;}

@@ -1,3 +1,7 @@
 .PageProjects {
-    color: blue;
+    height: 670px;
+    color: black;
+    overflow-y: scroll;
 }
+
+.PageProjects::-webkit-scrollbar {width:0;}

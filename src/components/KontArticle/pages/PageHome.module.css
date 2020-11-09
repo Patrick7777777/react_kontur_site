@@ -1,3 +1,7 @@
 .PageHome {
-    color: red;
+    height: 670px;
+    color: black;
+    overflow-y: scroll;
 }
+
+.PageHome::-webkit-scrollbar {width:0;}
